@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calculator.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main-container">
+        <form style="background-color: white;">
+            <div class="display">
+                <input type="text" class="input" name="input">
+                <input type="text" class="result-div" name="output" style="border: none;"></input>
+            </div>
+            <div class="button">
+                <div class="button-row">
+                    <!-- <button class="row" onclick="input.value='7' ">7</button> -->
+                    <input type="button" class="row" value="7" onclick="input.value +='7' ">
+                    <input type="button" class="row" value="8" onclick="input.value +='8' ">
+                    <input type="button" class="row" value="9" onclick="input.value +='9' ">
+                    <input type="button" class="row" value="+" onclick="input.value +='+' ">
+                </div>
+                <div class="button-row">
+                    <input type="button" class="row" value="4" onclick="input.value +='4' ">
+                    <input type="button" class="row" value="5" onclick="input.value +='5' ">
+                    <input type="button" class="row" value="6" onclick="input.value +='6' ">
+                    <input type="button" class="row" value="*" onclick="input.value +='*' ">
+                </div>
+                <div class="button-row">
+                    <input type="button" class="row" value="1" onclick="input.value +='1' ">
+                    <input type="button" class="row" value="2" onclick="input.value +='2' ">
+                    <input type="button" class="row" value="3" onclick="input.value +='3' ">
+                    <input type="button" class="row" value="-" onclick="input.value +='-' ">
+                </div>
+                <div class="button-row">
+                    <input type="button" class="row" value="0" onclick="input.value +='0' ">
+                    <input type="button" class="row" value="%" onclick="input.value +='%' ">
+                    <input type="button" class="row" value="C" onclick="input.value ='',output.value='' " >
+                    <input type="button" id="equal" class="row" value="=" onclick="output.value=eval(input.value)">
+                </div>
+            
+            </div>
+        </form> 
+    </div>
+    <script src="calculator.js"></script>
+        
+</body>
+</html>
